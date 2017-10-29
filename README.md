@@ -1,6 +1,11 @@
 # Lijun Zhu's Resume
 This is the repo for Lijun Zhu's resume. I keep updating it whenever new project/work/publication is available.
 
+## To-do list
+
+- [ ] Find permanent solution to list publication in section of journal paper and conference papers
+- [ ] Build-in publication to .cls file
+
 ## Template Source
 This resume repo uses template in [Awesome CV](https://github.com/posquit0/Awesome-CV). To acoomendate the publication list, I add some extra code to straighten up the format. It also includes a submodule from my [personal BibTex library repo](https://github.com/lijunzh/publication).
 
