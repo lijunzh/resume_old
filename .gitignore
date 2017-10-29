@@ -7,3 +7,5 @@
 *.synctex.gz
 resume.pdf
 coverletter.pdf
+.texpadtmp
+*.bak
