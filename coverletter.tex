@@ -48,8 +48,8 @@
 
 
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
+%    PERSONAL INFORMATION
+%    Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,noedge,left]{./lijun}
@@ -73,17 +73,17 @@
 
 
 %-------------------------------------------------------------------------------
-%	LETTER INFORMATION
-%	All of the below lines must be filled out
+%    LETTER INFORMATION
+%    All of the below lines must be filled out
 %-------------------------------------------------------------------------------
-% The company being applied to
+% The company to which you are applying
 \recipient
   {Company Recruitment Team}
-  {Electronic Arts\\7700 W Parmer Ln\\Austin, TX 78729}
+  {Texas Instruments\\12500 TI Boulevard\\Dallas, TX 75243}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
-\lettertitle{Job Application for Data Software Engineer Intern (Summer 2018)}
+\lettertitle{Job Application for Machine Learning Intern (Summer 2018)}
 % How the letter is opened
 \letteropening{Dear Recruiters,}
 % How the letter is closed
@@ -95,7 +95,7 @@
 %-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
+% Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
 \makecvheader[R]
 
@@ -106,28 +106,36 @@
   {Lijun Zhu~~~·~~~Cover Letter}
   {}
 
-% Print the title with above letter informations
+% Print the title with above letter information
 \makelettertitle
 
 %-------------------------------------------------------------------------------
-%	LETTER CONTENT
+%    LETTER CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
 \lettersection{About Me}
-I am a Ph.D. student at Georgia Tech working on applying statistical and machine-learning based algorithms to big data problem. I am experienced in pre-processing and manipulating time-sequence dataset in large volume. I have developed and tested machine-learning based algorithms and published results in peer-reviewed conference and journal papers. As a contributor to open-source projects, I am an experienced programmer and the co-author of several software packages. For hobbies, I built computer servers and helped maintaining HPC cluster in my research group.
+I am a Ph.D. student at Georgia Tech working on applying statistical and machine-learning based algorithms to big data problem. 
+I have years of experience in pre-processing and manipulating time-sequence dataset in large volume. 
+I have developed and tested machine-learning based algorithms and published results in peer-reviewed conference and journal papers. 
+As a contributor to open-source projects, I am an experienced programmer and the co-author of several software packages. 
+For hobbies, I built computer servers and helped to maintain HPC cluster in my research group.
 
-\lettersection{Why EA?}
-Electronic Arts (EA) is the leading company that makes great games I played ever since I was a kid. The simulation games, such as NBA live is the longest game series I played. Alone with its excellent games, EA accumulated large volume of data which is a great opportunity for me as a data scientist to work on. Moreover, the large scale distributed data system EA is trying to build interests me the most that I can used my experience to create an impact on a large scale.
-
+\lettersection{Why TI?}
+Texas Instruments (TI) is the leading company in semiconductor design and signal processing. 
+Evolved from a seismic processing company, TI shares the same background and passion as me, who studies signal processing and machine learning techniques for seismic data processing. 
+With the eagerness for innovation, TI is the ideal place for young graduate like me who wish to transfer my knowledge and experience to real-world impact. 
 
 \lettersection{Why Me?}
-Years of research experience in software development trained me into a self-motivated young man with the eagerness to make an impact on other people. Familiar with version control and continuous integration tools, I can easily work with any existing development infrastructure. The outstanding background in statistical modeling and machine-learning algorithm/tools (Torch, Tensorflow, etc.) makes me a strong candidate to this summer internship position. 
+Years of education in signal processing and machine learning give me solid understanding and skills for data science and numerical computation in both software and hardware levels. 
+My experience in software development for both research and open-source projects equips me with fluency in Python and C++. 
+Familiar with version control and continuous integration tools, I can quickly work with any existing development infrastructure. 
+The excellent background in statistical modeling and machine-learning algorithm/tools (scikit-learn, Torch, Tensorflow, etc.) makes me a strong candidate for this summer internship position. 
 \end{cvletter}
 
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
+% Print the signature and enclosures with above letter information
 \makeletterclosing
 
 \end{document}
