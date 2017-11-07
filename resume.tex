@@ -15,8 +15,15 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % External packages
-\usepackage{bibentry}
-
+\usepackage[
+	backend=biber,
+	style=ieee,
+	sorting=ydnt,
+	defernumbers=true,
+	refsection=section
+	]{biblatex}
+\addbibresource{publication/lijun.bib}
+\AtBeginBibliography{\footnotesize}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}

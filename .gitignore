@@ -9,3 +9,6 @@ resume.pdf
 coverletter.pdf
 .texpadtmp
 *.bak
+*.bbl
+*.bcf
+*.xml
