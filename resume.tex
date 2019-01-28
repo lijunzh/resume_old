@@ -25,6 +25,30 @@
 \addbibresource{publication/lijun.bib}
 \AtBeginBibliography{\footnotesize}
 
+% prevent certain fields in references from printing in bibliography
+\AtEveryBibitem{\clearfield{issn}}
+\AtEveryBibitem{\clearlist{issn}}
+
+\AtEveryBibitem{\clearfield{language}}
+\AtEveryBibitem{\clearlist{language}}
+
+\AtEveryBibitem{\clearfield{doi}}
+\AtEveryBibitem{\clearlist{doi}}
+
+\AtEveryBibitem{\clearfield{url}}
+\AtEveryBibitem{\clearlist{url}}
+
+\AtEveryBibitem{\clearfield{eprint}}
+\AtEveryBibitem{\clearlist{eprint}}
+
+\AtEveryBibitem{\clearfield{note}}
+\AtEveryBibitem{\clearlist{note}}
+
+\AtEveryBibitem{%
+    \ifentrytype{online}
+    {}
+    {\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}}}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
