@@ -13,3 +13,7 @@ coverletter.pdf
 *.bbl
 *.bcf
 *.xml
+*.d
+*.fdb_latexmk
+*.fls
+*.xdv
