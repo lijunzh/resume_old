@@ -2,26 +2,31 @@
 LATEXMK = latexmk
 RM = rm -f
 
-# Project-specific settings
-DOCNAME = resume
+# Options
+LATEXOPT = -xelatex
+DEPOPT = -M -MP -MF
+CONTINUOUS = -pvc
 
 # Targets
-all: $(DOCNAME).pdf
+all: resume.pdf coverletter.pdf
+release: all squeeze
 
 # Rules
 %.pdf: %.tex
-	$(LATEXMK) -xelatex -M -MP -MF $*.d $*
+	$(LATEXMK) $(LATEXOPT) $(CONTINUOUS) $(DEPOPT) $*.d $*
 
-clean: mostlyclean
+clean: squeeze
 	$(LATEXMK) -silent -C
-	$(RM) *.d
 	$(RM) *.run.xml *.synctex.gz
 	$(RM) *.bbl
+	$(RM) *.d
 
-mostlyclean:
+squeeze:
 	$(LATEXMK) -silent -c
 
-.PHONY: all clean mostlyclean
+
+.PHONY: all clean squeeze
 
 # Include auto-generated dependencies
 -include *.d
+
