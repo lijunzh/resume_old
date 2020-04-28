@@ -10,10 +10,12 @@ CONTINUOUS = -pvc
 # Targets
 all: resume.pdf coverletter.pdf
 release: all squeeze
+edit: $(doc).tex
+	$(LATEXMK) $(LATEXOPT) $(CONTINUOUS) $(DEPOPT) $(doc).d $(doc)
 
 # Rules
 %.pdf: %.tex
-	$(LATEXMK) $(LATEXOPT) $(CONTINUOUS) $(DEPOPT) $*.d $*
+	$(LATEXMK) $(LATEXOPT) $(DEPOPT) $*.d $*
 
 clean: squeeze
 	$(LATEXMK) -silent -C
